@@ -12,6 +12,8 @@ import org.springframework.context.ApplicationContext;
 public class SpringIn5StepsScopeApplication {
 
     //create as less number of objects as possible
+    // singleton - one instance per Spring context (application context)
+    // prototype - new bean whenever requested
     private static Logger LOGGER = LoggerFactory.getLogger(SpringIn5StepsScopeApplication.class);
 
     public static void main(String[] args) {
@@ -23,6 +25,7 @@ public class SpringIn5StepsScopeApplication {
         PersonDAO personDao2 = applicationContext.getBean(PersonDAO.class);
 
         LOGGER.info("{}",personDao);
+        LOGGER.info("{}",personDao.getJdbcConnection());
         LOGGER.info("{}",personDao.getJdbcConnection());
 
         LOGGER.info("{}",personDao2);

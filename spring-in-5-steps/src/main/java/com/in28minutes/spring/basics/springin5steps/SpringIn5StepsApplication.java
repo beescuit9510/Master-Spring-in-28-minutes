@@ -1,6 +1,6 @@
-package com.in28minutes.spring.basics.springin5steps;
+package com.in28minutes.spring.basics.componentscan.springin5steps;
 
-import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImp;
+import com.in28minutes.spring.basics.componentscan.springin5steps.basic.BinarySearchImp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

@@ -1,8 +1,6 @@
-package com.in28minutes.spring.basics.springin5steps;
+package com.in28minutes.spring.basics.componentscan.springin5steps;
 
 import com.in28minutes.spring.basics.componentscan.ComponentDAO;
-import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImp;
-import com.in28minutes.spring.basics.springin5steps.scope.PersonDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.in28minutes.spring.basics.springin5steps.basic;
+package com.in28minutes.spring.basics.componentscan.springin5steps.basic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -9,11 +9,11 @@ public class BinarySearchImp {
     private SortAlgorithm sortAlgorithm;
 
     @Autowired
-    public BinarySearchImp(SortAlgorithm sortAlgorithm) {
-        this.sortAlgorithm = sortAlgorithm;
+    public BinarySearchImp(SortAlgorithm quickSortAlgorithm) {
+        this.sortAlgorithm = quickSortAlgorithm;
     }
 
-    public int binarySearch(int[] numbers, int intToFind){
+    public int binarySearch(int[] numbers, int intToFind) {
 
         int[] sortedNumbers = sortAlgorithm.sort(numbers);
 

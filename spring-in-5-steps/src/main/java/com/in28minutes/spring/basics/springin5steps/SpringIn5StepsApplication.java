@@ -22,6 +22,15 @@ public class SpringIn5StepsApplication {
     // but nowadays there is no big difference between mandatory and optional dependencies
     // ( since Spring dose not log setter and field injection it is recommended to use constructor)
 
+
+    //Autowiring when there are multiple matching beans more than one
+    //@Primary
+    //using variable name (when it comes to constructor injection, have to match the constructor parameter names, not the member variable name)
+    //@Qualifier (when it comes to constructor, have to annotation annotate it to constructor parameter
+    //priority @Qualifier >@Primary > variable name
+    //if there is one favorite and most important thing that is favored in all the situations then use @Primary
+    // otherwise name or @Qualifier, using name makes it much clearer
+
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);

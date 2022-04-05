@@ -1,9 +1,9 @@
 package com.in28minutes.spring.basics.springin5steps;
 
+import com.in28minutes.spring.basics.springin5steps.basic.BinarySearchImp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class SpringIn5StepsApplication {
@@ -29,13 +29,25 @@ public class SpringIn5StepsApplication {
     //@Qualifier (when it comes to constructor, have to annotation annotate it to constructor parameter
     //priority @Qualifier >@Primary > variable name
     //if there is one favorite and most important thing that is favored in all the situations then use @Primary
-    // otherwise name or @Qualifier, using name makes it much clearer
+    // otherwise name or @Qualifier, usi ng name makes it much clearer
+
+
+    //Bean lifecycle bean Scope
+    //bean_scope : singleton / prototype / request / session
+    //@Scope("[bean_scope]")
+    // instead of hardcoding use enums that spring provides for us such as BeanDefinition or ConfigurableBeanFactory classes
+
 
     public static void main(String[] args) {
 
         ApplicationContext applicationContext = SpringApplication.run(SpringIn5StepsApplication.class, args);
 
         BinarySearchImp binarySearch = applicationContext.getBean(BinarySearchImp.class);
+
+        BinarySearchImp binarySearch1 = applicationContext.getBean(BinarySearchImp.class);
+
+        System.out.println(binarySearch);
+        System.out.println(binarySearch1);
 
         int result = binarySearch.binarySearch(new int[]{1, 2, 3, 4}, 1);
 
